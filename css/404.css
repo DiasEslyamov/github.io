@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 10rem;
+  margin-bottom: 20px;
+  color: #000;
+  animation: scales 0.5s infinite alternate;
+}
+
+p {
+  font-size: 2rem;
+  color: #000;
+}
+
+.home{
+    text-decoration: none;
+    color: #000;
+    font-size: 2rem;    
+}
+
+a:hover {
+    color: #707070;
+    text-decoration: underline;
+}
+
+@keyframes scales {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.5); }
+}
