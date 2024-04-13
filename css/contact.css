@@ -69,7 +69,8 @@
 
 #content {
     display: block;
-    padding-bottom: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 #content img {
@@ -85,8 +86,6 @@ h1 {
 
 .container {
     display: flex;
-    padding-left: 60px;
-    padding-right: 60px;
     justify-content: space-between;
 } 
 
@@ -121,6 +120,20 @@ textarea {
 input[type="submit"] {
     width: 170px;
     height: 30px;
+}
+
+.data {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 60px;
+    margin-left: 60px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+#toggleUserDataLink {
+    color: #000;
+    text-decoration: none;
 }
 
 #footer {

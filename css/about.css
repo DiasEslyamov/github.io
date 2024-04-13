@@ -30,12 +30,12 @@
 
 .menu li a{
     text-decoration: none;
-    color: #0E0D35
+    color: #0E0D35;
 }
 
 .menu li a:hover{
     text-decoration: underline;
-    color:  #a6abb2;
+    color: #a6abb2;
 }
 
 .dropdown {
@@ -60,7 +60,7 @@
 }
 
 .dropdown-content a:hover {
-    background-color: #f4f3ff;;
+    background-color: #f1f1f1;
 }
 
 .dropdown:hover .dropdown-content {
@@ -74,89 +74,92 @@
     padding-bottom: 50px;
 }
 
-.flag {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.flag img {
-    content: url('../image/UK_flag.png');
-    position: absolute;
-    top: 20%;
-    left: 38%;
-    width: 100px;
-    height: 75px;
-    animation: change 7s ease-in-out infinite;
-}
-
-h1{ 
-    padding-bottom: 50px;
-}
-
-p{
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.english, .french, .german{
-    display: block;
-    align-items: center;
-    text-align: center;
-    padding-bottom: 50px;
-}
-
-.english {
-    display: flex;
-    padding-top: 50px;
-    margin-left: 60px;
-    margin-right: 60px;
-    justify-content: space-between;
-}
-
-.item-card1 , .item-card2, .item-card3, .item-card4 {
-    display: block;
-    text-align: center;
-    width: 300px;
-    height: 75vh;
-    border: 1px solid #cfd1d3;
-}
-
-.item-card1:hover, .item-card2:hover, .item-card3:hover, .item-card4:hover {
-    transform: scale(1.1);
-}
-
-.item-card1 img , .item-card2 img, .item-card3 img, .item-card4 img {
-    width: 300px;
-    height: 250px;
-}
-
-.item-card1 p, .item-card2 p, .item-card3 p, .item-card4 p {
-    width: 300px;
-    height: 100px;
-    font-weight: normal;
+.container {
+    margin: 0 auto;
     padding: 20px;
+}
+
+.container img {
+    display: none;
+}
+.highlight {
+    color: #707070;
+    cursor: pointer;
+}
+
+.map {
+    position: relative;
+}
+.map img {
+    width: 100%;
+    height: auto;
+}
+.map svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.map svg path {
+    fill: none; /* Убираем обводку */
+    pointer-events: all; /* Разрешаем быть целью событий мыши */
+    cursor: pointer; /* Меняем курсор при наведении */
+}
+
+.france:hover {
+    fill: #F4A460;
+}
+
+.italy:hover {
+    fill: #F5DEB3;
+}
+
+.germany:hover {
+    fill: #FFDAB9;
+}
+
+.finland:hover {
+    fill: #D2B48C;
+}
+
+.tooltip {
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 500;
+    background: #fff;
+    color: #000;
     font-size: 25px;
+    position: absolute;
 }
 
-.french {
-    display: flex;
-    padding-top: 50px;
-    margin-left: 60px;
-    margin-right: 60px;
-    justify-content: space-between;
+.info__bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: 0.3s all;
+    pointer-events: none;
+    z-index: 10;
 }
-
-.german {
-    display: flex;
-    padding-top: 50px;
-    margin-left: 60px;
-    margin-right: 60px;
-    justify-content: space-between;
+.info__bg.active {
+    pointer-events: all;
+    opacity: 1;
+    transition: 0.3s all;
+}
+.info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    width: 500px;
 }
 
 #footer {
@@ -165,6 +168,7 @@ p{
     align-items: center;
     padding-left: 60px;
     padding-right: 60px;
+    padding-top: 50px;
 }
 
 .footer-menu {
@@ -224,24 +228,4 @@ p{
     width: 60px;
     height: 60px;
     padding: 5px;
-}
-
-@keyframes change {
-    0%{
-        opacity: 1;
-    }
-    25%{
-        opacity: 0.5;
-    }
-    50%{
-        opacity: 1;
-        content: url('../image/France_flag.png');
-    }
-    75%{
-        opacity: 0.5;
-    }
-    100%{
-        opacity: 1;
-        content: url('../image/German_flag.png');
-    }
 }
