@@ -114,6 +114,21 @@ input#search-bar{
     padding-bottom: 50px;
 }
 
+h1 {
+    font-size: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 25px;
+    text-align: justify;
+    text-indent: 25px;
+    line-height: 1.5;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
 #footer {
     display: flex;
     justify-content: space-between;

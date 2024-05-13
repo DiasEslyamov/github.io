@@ -8,8 +8,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .logo{
@@ -148,6 +148,7 @@ input#search-bar{
 
 .item1, .item2 {
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     justify-content: space-between; 
 }
@@ -155,6 +156,7 @@ input#search-bar{
 .item-element-1-1 , .item-element-1-2, .item-element-1-3, .item-element-1-4 {
     font-size: 25px;
     display: flex;
+    margin-bottom: 10px;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -163,8 +165,25 @@ input#search-bar{
     border: 1px solid #cfd1d3;
 }
 
+.item-element-1-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('../image/students.png');
+}
+
+.item-element-1-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('../image/books.png');
+} 
+
+.item-element-1-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('../image/still-life-documents-stack.png');
+} 
+
+.item-element-1-4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../image/teachers.png');
+}
+
 .item-element-1-1 p, .item-element-1-2 p, .item-element-1-3 p, .item-element-1-4 p {
     font-size: 25px;
+    color: #f4f3ff;;
 }
 
 .block2 img {
@@ -173,6 +192,7 @@ input#search-bar{
 
 .item-element-2-1 , .item-element-2-2, .item-element-2-3, .item-element-2-4 {
     width: 300px;
+    margin-bottom: 40px;
     border: 1px solid #cfd1d3;
 }
 
@@ -196,8 +216,8 @@ input#search-bar{
     justify-content: space-between;
     align-items: center;
     align-items: center;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .footer-menu {
