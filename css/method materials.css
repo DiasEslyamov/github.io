@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+.search-container {
+    width: 490px;
+    display: block;
+    padding-top: 75px;
+}
+  
+input#search-bar {
+    margin: 0 auto;
+    width: 100%;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 1rem;
+    border: 1px solid #000;
+    outline: none;
+}
+
+.search-icon {
+    position: relative;
+    float: right;
+    width: 75px;
+    height: 75px;
+    top: -62px;
+    right: -20px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+ul {
+    display: flex;
+}
+
+.menu li {
+    display: block;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #0E0D35;
+}
+
+.menu li a:hover {
+    color: #a6abb2;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f4f6f9;
+    min-width: 160px;
+    z-index: 1;
+    left: -140px;
+}
+
+.dropdown-content a {
+    color: #0E0D35;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f4f3ff;
+    border: 2px solid #000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#content {
+    display: block;
+    padding-bottom: 50px;
+}
+
+h1, h2 {
+    font-size: 30px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 20px;   
+}
+
+h2 {
+    padding-bottom: 10px;
+}
+
+ol {
+    font-size: 25px;
+    text-align: justify;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 10px;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.footer-menu {
+    text-align: center;
+    list-style: none;
+}
+
+.footer-menu li {
+    display: block;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+.footer-menu li a {
+    text-decoration: none;
+    color: #0E0D35;
+}
+
+.footer-menu li a:hover {
+    color: #a6abb2;
+}
+
+.list1, .list2 {
+    text-align: center;
+    font-size: 20px;
+    padding: 5px 10px;
+    list-style: none;
+}
+
+.list1 li, .list2 li {
+    display: block;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+.list1 li a, .list2 li a {
+    text-decoration: none;
+    color: #0E0D35;
+}
+
+.list1 li a:hover {
+    color: #a6abb2;
+}
+
+.media {
+    text-align: center;
+}
+
+.media p {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.media-item img {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+}
+
+@media screen and (max-width: 430px) {
+    #header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+    }
+
+    .logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .search-container {
+        width: 250px;
+        display: block;
+        padding-top: 20px;
+    }
+      
+    input#search-bar {
+        margin: 0 auto;
+        width: 100%;
+        height: 45px;
+        padding: 0 20px;
+        font-size: 1rem;
+        border: 1px solid #000;
+        outline: none;
+    }
+      
+    .search-icon {
+        position: relative;
+        float: right;
+        width: 75px;
+        height: 75px;
+        top: -60px;
+        right: -20px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    ul {
+        display: block;
+    }
+
+    /* Основные стили для меню */
+    .menu li {
+        display: block;
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+
+    .menu li a {
+        text-decoration: none;
+        color: #0E0D35;
+    }
+
+    .menu li a:hover {
+        color: #a6abb2;
+    }
+
+    .dropdown {
+        position: relative;
+        display: block;
+    }
+
+    /* Скрыть подменю по умолчанию */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f4f6f9;
+        min-width: 160px;
+        z-index: 1;
+        top: 100%; /* Появляться сразу под пунктом меню */
+        left: 0;   /* Выравнивание по левому краю пункта меню */
+    }
+
+    /* Показать подменю при добавлении класса show */
+    .dropdown-content.show {
+        display: block;
+    }
+
+    .dropdown-content a {
+        color: #0E0D35;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f4f3ff;
+        border: 2px solid #000;
+    }
+
+    /* Гамбургер-иконка */
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 250px;
+        left: 70px;
+    }
+
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px 0;
+    }
+
+    /* Стили для активного меню */
+    .menu.active {
+        display: block;
+    }
+    
+    #content {
+        display: block;
+        padding-bottom: 20px;
+    }
+    
+    h1, h2 {
+        font-size: 18px;
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    
+    h1 {
+        text-align: center;
+        padding-bottom: 20px;   
+    }
+    
+    h2{
+        padding-bottom: 10px;
+    }
+    
+    ol {
+        font-size: 18px;
+        text-align: justify;
+        padding-right: 60px;
+        padding-left: 60px;
+        padding-bottom: 10px;
+    }
+    
+    #footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .footer-menu {
+        text-align: center;
+        list-style: none;
+    }
+    
+    .footer-menu li {
+        display: block;
+        font-size: 18px;
+    }
+    
+    .footer-menu li a{
+        text-decoration: none;
+        color: #0E0D35;
+    }
+    
+    .footer-menu li a:hover{
+        color:  #a6abb2;
+    }
+    
+    .list1, .list2 {
+        text-align: center;
+        list-style: none;
+    }
+    
+    .list1 li, .list2 li {
+        display: block;
+        font-size: 18px;
+    }
+    
+    .list1 li a, .list2 li a {
+        text-decoration: none;
+        color: #0E0D35;
+    }
+    
+    .list1 li a:hover {
+        color: #a6abb2;
+    }
+    
+    .media {
+        text-align: center;
+    }
+    
+    .media p {
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+    
+    .media-item img {
+        width: 60px;
+        height: 60px;
+    }
+}
