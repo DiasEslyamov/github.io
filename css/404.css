@@ -36,7 +36,6 @@ p {
 
 a:hover {
     color: #707070;
-    text-decoration: underline;
 }
 
 @keyframes scales {
