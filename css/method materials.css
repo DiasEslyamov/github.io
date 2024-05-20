@@ -6,6 +6,7 @@
 
 #header {
     display: flex;
+    background-color: #e7e7eb;
     justify-content: space-between;
     align-items: center;
     padding-left: 60px;
@@ -98,6 +99,7 @@ ul {
 
 #content {
     display: block;
+    padding-top: 20px;
     padding-bottom: 50px;
 }
 
@@ -126,6 +128,7 @@ ol {
 
 #footer {
     display: flex;
+    background-color: #e7e7eb;
     justify-content: space-between;
     align-items: center;
     padding-left: 60px;

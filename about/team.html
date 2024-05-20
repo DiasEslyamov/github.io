@@ -16,6 +16,13 @@
             <a href="#"><img class="search-icon"
                     src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
         </form>
+        <!-- Гамбургер-иконка для открытия/закрытия меню -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <!-- Меню для мобильного устройства -->
         <div class="menu">
             <li><a href="../index.html">Главная</a></li>
             <li class="dropdown">
@@ -41,6 +48,44 @@
     </div>
     <div id="content">
         <h1>Наш коллектив</h1>
+        <div class="gallery-container">
+            <div class="gallery-item" data-index="1">
+                <img
+                    src="https://images.pexels.com/photos/2678468/pexels-photo-2678468.jpeg?auto=compress&cs=tinysrgb&w=600">
+            </div>
+            <div class="gallery-item" data-index="2">
+                <img
+                    src="https://images.pexels.com/photos/1708912/pexels-photo-1708912.jpeg?auto=compress&cs=tinysrgb&w=600">
+            </div>
+            <div class="gallery-item" data-index="3">
+                <img
+                    src="https://images.pexels.com/photos/3184658/pexels-photo-3184658.jpeg?auto=compress&cs=tinysrgb&w=600">
+            </div>
+            <div class="gallery-item" data-index="4">
+                <img
+                    src="https://images.pexels.com/photos/4019754/pexels-photo-4019754.jpeg?auto=compress&cs=tinysrgb&w=600">
+            </div>
+            <div class="gallery-item" data-index="5">
+                <img
+                    src="https://images.pexels.com/photos/5212340/pexels-photo-5212340.jpeg?auto=compress&cs=tinysrgb&w=600">
+            </div>
+            <div class="gallery-item" data-index="6">
+                <img
+                    src="https://images.pexels.com/photos/4260323/pexels-photo-4260323.jpeg?auto=compress&cs=tinysrgb&w=600">
+            </div>
+            <div class="gallery-item" data-index="7">
+                <img
+                    src="https://images.pexels.com/photos/5427870/pexels-photo-5427870.jpeg?auto=compress&cs=tinysrgb&w=600">
+            </div>
+            <div class="gallery-item" data-index="8">
+                <img
+                    src="https://images.pexels.com/photos/3184317/pexels-photo-3184317.jpeg?auto=compress&cs=tinysrgb&w=600">
+            </div>
+            <div class="gallery-item" data-index="9">
+                <img
+                    src="https://images.pexels.com/photos/1181722/pexels-photo-1181722.jpeg?auto=compress&cs=tinysrgb&w=600">
+            </div>
+        </div>
         <p>
             Языковая Школа Eazy Language – это не просто учебное заведение, это целый мир возможностей и знаний, где
             каждый студент находит свой путь к языковой гармонии и культурному обогащению. В сердце нашей школы –
@@ -114,6 +159,8 @@
             </div>
         </div>
     </div>
+    <script src="../js/menu.js"></script>
+    <script src="../js/team.js"></script>
 </body>
 
 </html>

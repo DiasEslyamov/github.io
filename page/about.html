@@ -17,6 +17,13 @@
             <a href="#"><img class="search-icon"
                     src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
         </form>
+        <!-- Гамбургер-иконка для открытия/закрытия меню -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <!-- Меню для мобильного устройства -->
         <div class="menu">
             <li><a href="../index.html">Главная</a></li>
             <li class="dropdown">
@@ -66,7 +73,7 @@
                 носителями языка и студентами из разных стран.</li>
         </ul>
         <p>Ниже приведена статистика по количеству носителей определенных языков.</p>
-        <canvas id="myChart" style="width:100%;max-width:1200px; margin: 0 auto;"></canvas>
+        <canvas id="myChart"></canvas>
         <div class="map">
             <img src="../image/map2.png">
             <svg viewbox="0 0 1280 1024">
@@ -137,6 +144,7 @@
         </div>
     </div>
     <script src="../js/about.js" defer></script>
+    <script src="../js/menu.js"></script>
 </body>
 
 </html>

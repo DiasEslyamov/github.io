@@ -6,6 +6,7 @@
 
 #header{
     display: flex;
+    background-color: #e7e7eb;
     justify-content: space-between;
     align-items: center;
     padding-left: 60px;
@@ -64,6 +65,10 @@ input#search-bar{
     list-style: none;
 }
 
+ul {
+    display: flex;
+}
+
 .menu li {
     display: block;
     font-size: 20px;
@@ -111,6 +116,7 @@ input#search-bar{
 
 #content {
     display: block;
+    padding-top: 20px;
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 50px;
@@ -171,6 +177,7 @@ p{
 
 #footer {
     display: flex;
+    background-color: #e7e7eb;
     justify-content: space-between;
     align-items: center;
     align-items: center;
@@ -448,7 +455,7 @@ p{
     
     .footer-menu li {
         display: block;
-        font-size: 18px;
+        font-size: 20px;
     }
     
     .footer-menu li a{
@@ -467,7 +474,7 @@ p{
     
     .list1 li, .list2 li {
         display: block;
-        font-size: 18px;
+        font-size: 20px;
     }
     
     .list1 li a, .list2 li a {
@@ -484,7 +491,7 @@ p{
     }
     
     .media p {
-        font-size: 18px;
+        font-size: 20px;
         padding-bottom: 20px;
     }
     

@@ -12,6 +12,7 @@ let xValues = ["Английский", "Мандаринский (китайск
         }]
       },
       options: {
+        responsive: true,
         scales: {
           yAxes: [{
             scaleLabel: {
@@ -40,7 +41,7 @@ let xValues = ["Английский", "Мандаринский (китайск
         }
       }
     });
-
+    
     const highlightWords = document.querySelectorAll('.highlight');
 
     highlightWords.forEach(word => {
