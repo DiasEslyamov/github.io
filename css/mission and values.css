@@ -4,6 +4,22 @@
     box-sizing: border-box;
 }
 
+body {
+    transition: background-color 0.5s, color 0.5s;
+}
+
+/* Светлая тема */
+body.light-mode {
+    background-color: #fff;
+    color: #000000;
+}
+
+/* Темная тема */
+body.dark-mode {
+    background-color: #181818;
+    color: #fff;
+}
+
 #header{
     display: flex;
     background-color: #e7e7eb;
@@ -23,7 +39,8 @@
     padding-top: 75px;
 }
   
-input#search-bar{
+/* Основные стили для текстового поля */
+input#search-bar {
     margin: 0 auto;
     width: 100%;
     height: 45px;
@@ -31,23 +48,54 @@ input#search-bar{
     font-size: 1rem;
     border: 1px solid #000;
     outline: none;
-    &:focus{
-      border: 2px solid #a6abb2;
-      transition: 0.35s ease;
-      color: #000;
-      &::-webkit-input-placeholder{
-        transition: opacity 0.45s ease; 
-          opacity: 0;
-       }
-      &::-moz-placeholder {
-        transition: opacity 0.45s ease; 
-          opacity: 0;
-       }
-      &:-ms-placeholder {
-       transition: opacity 0.45s ease; 
-         opacity: 0;
-       }    
-    }
+    transition: border 0.35s ease, color 0.35s ease, background-color 0.35s ease;
+}
+
+/* Светлая тема */
+.light-mode input#search-bar {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+}
+
+.light-mode input#search-bar:focus {
+    border: 2px solid #333;
+}
+
+/* Темная тема */
+.dark-mode input#search-bar {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+.dark-mode input#search-bar:focus {
+    border: 2px solid #a6abb2;
+}
+
+/* Стили для плейсхолдера */
+input#search-bar::-webkit-input-placeholder {
+    transition: opacity 0.45s ease;
+}
+
+input#search-bar::-moz-placeholder {
+    transition: opacity 0.45s ease;
+}
+
+input#search-bar:-ms-placeholder {
+    transition: opacity 0.45s ease;
+}
+
+input#search-bar:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+input#search-bar:focus::-moz-placeholder {
+    opacity: 0;
+}
+
+input#search-bar:focus:-ms-placeholder {
+    opacity: 0;
 }
   
 .search-icon{
@@ -107,6 +155,86 @@ input#search-bar{
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.dark-mode #header {
+    background-color: #212121;
+    color: #fff;
+}
+
+.dark-mode #footer {
+    background-color: #212121;
+    color: #fff;
+}
+
+.dark-mode .menu li a{
+    color: #fff;
+}
+
+.dark-mode .footer-menu li a {
+    color: #fff;
+}
+
+.dark-mode .list1 li a {
+    color: #fff;
+}
+
+.dark-mode #search-bar {
+    background-color: #121212;
+    color: #fff;
+}
+
+.dark-mode .dropdown-content a{
+    background-color: #212121;
+}
+
+.dark-mode .dropdown-content a:hover{
+    background-color: #121212;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #D3D3D3;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #000;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
 }
 
 #content {
@@ -224,7 +352,8 @@ p, ol {
         padding-top: 20px;
     }
       
-    input#search-bar{
+    /* Основные стили для текстового поля */
+    input#search-bar {
         margin: 0 auto;
         width: 100%;
         height: 45px;
@@ -232,23 +361,54 @@ p, ol {
         font-size: 1rem;
         border: 1px solid #000;
         outline: none;
-        &:focus{
-          border: 2px solid #a6abb2;
-          transition: 0.35s ease;
-          color: #000;
-          &::-webkit-input-placeholder{
-            transition: opacity 0.45s ease; 
-              opacity: 0;
-           }
-          &::-moz-placeholder {
-            transition: opacity 0.45s ease; 
-              opacity: 0;
-           }
-          &:-ms-placeholder {
-           transition: opacity 0.45s ease; 
-             opacity: 0;
-           }    
-        }
+        transition: border 0.35s ease, color 0.35s ease, background-color 0.35s ease;
+    }
+
+    /* Светлая тема */
+    .light-mode input#search-bar {
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #ccc;
+    }
+
+    .light-mode input#search-bar:focus {
+        border: 2px solid #333;
+    }
+
+    /* Темная тема */
+    .dark-mode input#search-bar {
+        background-color: #333;
+        color: #fff;
+        border: 1px solid #555;
+    }
+
+    .dark-mode input#search-bar:focus {
+        border: 2px solid #a6abb2;
+    }
+
+    /* Стили для плейсхолдера */
+    input#search-bar::-webkit-input-placeholder {
+        transition: opacity 0.45s ease;
+    }
+
+    input#search-bar::-moz-placeholder {
+        transition: opacity 0.45s ease;
+    }
+
+    input#search-bar:-ms-placeholder {
+        transition: opacity 0.45s ease;
+    }
+
+    input#search-bar:focus::-webkit-input-placeholder {
+        opacity: 0;
+    }
+
+    input#search-bar:focus::-moz-placeholder {
+        opacity: 0;
+    }
+
+    input#search-bar:focus:-ms-placeholder {
+        opacity: 0;
     }
       
     .search-icon{
@@ -338,8 +498,14 @@ p, ol {
         display: block;
     }
     
+    .switch {
+        margin-top: 10px;
+    }
+
     #content {
         display: block;
+        padding-left: 40px;
+        padding-right: 40px;
         padding-bottom: 20px;
     }
     
